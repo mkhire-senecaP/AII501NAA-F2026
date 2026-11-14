@@ -10,8 +10,11 @@ Change the installed libraries code panel  to this to prevent long installation:
 
 # Execution and Assumptions:
 
-You can the run the code through the "Run All" button or consectutively run each one.
+I was able to execute the experiments by manipulating the hyperparameters specfied while also adding copied sections of code to compare outputs for said experiments when prompted.
 
-Assumptions and Understanding are laid out in the activity questions and understandings on the collab ipynb understanding questions.
+You can run the code using the "Run All" button or run each one consecutively.
 
+Assumptions and Understanding are laid out in the activity questions and understanding questions on the ipynb understanding questions.
+
+Note: Questions in the understandings on the ipynb code sections file that have answer variables with print("My answer:", answer) are from me. Not the double-click sections.
 
