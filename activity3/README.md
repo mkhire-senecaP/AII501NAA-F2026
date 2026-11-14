@@ -1,4 +1,5 @@
 # Setup:
+## Disclaimer: Assistance from GeekForgeek, YouTube videos, and Claude AI was used for this activity.
 
 Go to Google Learning link in the document of Activity 3.
 Go to the Linear Regression Programming Exercise and click the button that says:
