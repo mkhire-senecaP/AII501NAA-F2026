@@ -1,0 +1,43 @@
+1.
+What is the maximum fare? 159.250000
+What is the mean distance across all trips? 8.289463
+How many cab companies are in the dataset? 31694, unique = 31
+What is the most frequent payment type? Credit Card	
+Are any features missing data? no
+
+2.
+Which feature correlates most strongly to the label FARE? trip miles and seconds
+Which feature correlates least strongly to the label FARE? tip rate
+
+3.
+How many epochs did it take to converge on the final model? 
+5 epoch were needed to cover the final model
+
+How well does the model fit the sample data? 
+Yes, as the rmse and loss decrease slightly at the later epoch, alongside the regression model showing a regression in which prediction line and true value dots are of close to each with little to almost no visible distance to each other.
+
+4.
+How did raising the learning rate impact your ability to train the model?
+It results in the convergence bouncing around, however the model does not fit well with points far distance to the prediction alongside loss and RMSE that are larger than the ones from Experiment 1.
+
+How did lowering the learning rate impact your ability to train the model?
+Convergance happens slowly, depicting a a straight diagonal depression that takes longer to converge. Alongside a unfit regression model that has true values and predictions not close to each, with potential to produce unfit data and outliers. However, it trains data faster than increasing learning rate.
+
+Did changing the batch size effect your training results?
+Trains faster than lower learning rate, but results in a similar output to decreasing the learning rate as both have an slow convergance and an unfit regression model.
+
+5.
+Does the model with two features produce better results than one using a single feature?
+Two features have greater RMSE than 1 feature. 3.745 for 1 feature, 3.7485 for two features. This means that two features do not inherently improve the model in this scenario. 
+
+Does it make a difference if you use TRIP_SECONDS instead of TRIP_MINUTES?
+Yes, it converges earlier and less points come together at the surface. Also RMSE is less compared to using TRIP_MINUTES. So TRIP_SECONDS with TRIP_MILES produces a better performing model than using TRIP_MINUTES.
+
+How well do you think the model comes to the ground truth fare calculation for Chicago Taxi Trips?
+Chicago taxi cabs use a formula for cab fares calculations based on TRIP_MINUTES and TRIP_MILES:
+FARE = 2.25 * TRIP_MILES + 0.12 * TRIP_MINUTES + 3.25
+So if TRIP_MINUTES is needed, then the ground truth calculation can be calculated with that both TRIP_MILES and TRIP_MINUTES.
+
+How close is the predicted value to the label value? In other words, does your model accurately predict the fare for a taxi ride?
+It predicts fare price fairly well, usually off by around 50 cents to 1 dollar off. Loss represetns the difference between predicted and observed fare prices [ L1 = Predicted Fare - Observed Fare ]
+
